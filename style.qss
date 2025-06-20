@@ -1,0 +1,111 @@
+/* Main Window */
+QWidget {
+    background-color:rgb(153, 228, 134);
+    color: #111111;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+}
+
+/* Sidebar Panel */
+QFrame#sidebar {
+    background-color:rgb(101, 211, 101);
+    border-right: 1px solid #333;
+}
+
+/* Sidebar Buttons */
+QPushButton#sidebarBtn {
+    background-color: transparent;
+    color: #cccccc;
+    padding: 10px 20px;
+    text-align: left;
+    border: none;
+}
+QPushButton#sidebarBtn:hover {
+    background-color: #292929;
+    color: white;
+}
+QPushButton#sidebarBtn:checked {
+    background-color: #0078d7;
+    color: white;
+}
+
+/* Header Label */
+QLabel#headerLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Input Fields */
+QLineEdit, QComboBox {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #333;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+QLineEdit:focus, QComboBox:focus {
+    border: 1px solid #0078d7;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #0078d7;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+QPushButton:hover {
+    background-color: #005ea6;
+}
+QPushButton:disabled {
+    background-color: #3a3a3a;
+    color: #888;
+}
+
+/* Progress Bar */
+QProgressBar {
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #1e1e1e;
+}
+QProgressBar::chunk {
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+/* Table / History View */
+QTableWidget {
+    border: 1px solid #333;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    gridline-color: #444;
+}
+QHeaderView::section {
+    background-color: #292929;
+    color: #ffffff;
+    padding: 5px;
+    border: 1px solid #444;
+}
+
+/* Scroll Bars */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #1e1e1e;
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+}
+QScrollBar::handle {
+    background: #555;
+    border-radius: 5px;
+}
+QScrollBar::handle:hover {
+    background: #777;
+}
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+    border: none;
+}
+
